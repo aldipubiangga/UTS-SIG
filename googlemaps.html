@@ -29,11 +29,11 @@
 
 	var map = L.map('map', {
 		zoom: 9,
-		center: L.latLng([41.575730,13.002411]),
+		center: L.latLng([-5.287717, 104.844372]),
 		layers: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 	});
 
-	L.marker([41.575730, 13.002411]).addTo(map)
+	L.marker([-5.287717, 104.844372]).addTo(map)
 
 	L.control.search({
 		url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
